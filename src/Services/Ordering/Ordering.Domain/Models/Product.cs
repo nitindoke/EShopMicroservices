@@ -1,4 +1,5 @@
 ﻿using Ordering.Domain.Abstraction;
+using Ordering.Domain.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ordering.Domain.Models
 {
-    internal class Product : Entity<ProductId>
+    public class Product : Entity<ProductId>
     {
         public string Name { get; private set; } = default!;
         public decimal Price { get; private set; } = default!;

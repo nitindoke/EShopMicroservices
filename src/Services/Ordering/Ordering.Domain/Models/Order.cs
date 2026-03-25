@@ -13,7 +13,7 @@ namespace Ordering.Domain.Models
 
         public Address ShippingAddress { get; private set; } = default!;
         public Address BillingAddress { get; private set; } = default!;
-        public Payment payment { get; private set; } = default!;
+        public Payment Payment { get; private set; } = default!;
         public OrderStatus Status { get; private set; } = OrderStatus.Pending;
         public decimal TotalPrice
         {
@@ -30,7 +30,7 @@ namespace Ordering.Domain.Models
                 OrderName = orderName,
                 ShippingAddress = shippingAddress,
                 BillingAddress = billingAddress,
-                payment = payment,
+                Payment = payment,
                 Status = OrderStatus.Pending
             };
 
@@ -44,7 +44,7 @@ namespace Ordering.Domain.Models
             OrderName = orderName;
             ShippingAddress = shippingAddress;
             BillingAddress = billingAddress;
-            this.payment = payment;
+            this.Payment = payment;
             Status = status;
 
             AddDomainEvent(new OrderUpdatedEvent(this));
