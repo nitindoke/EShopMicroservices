@@ -1,0 +1,47 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Services\\Basket\\Basket.API\\Basket.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Discount\\Discount.Grpc\\Discount.Grpc.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BuildingBlocks\\BuildingBlocks.Messaging\\BuildingBlocks.Messaging.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApiGateways\\YarpApiGateway\\YarpApiGateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
